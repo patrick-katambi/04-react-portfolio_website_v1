@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -8,7 +9,14 @@ module.exports = {
       secondary: "#CCD6F6",
       accent: "#F3F2F4",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'codeLight': ['FiraCodeLight'],
+        'codeMedium': ['FiraCodeMedium'],
+        'codeBold': ['FiraCodeBold'],
+        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
