@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     colors: {
       primary: "#0A192F",
+      offset: "#19273B",
+      // primary: "#420FE7",
+      // background: "#19273B",
+      slide: "#420FE7",
       secondary: "#CCD6F6",
-      accent: "#F3F2F4",
+      accent: "#8892B0",
     },
     extend: {
       fontFamily: {
