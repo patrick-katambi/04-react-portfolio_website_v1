@@ -11,12 +11,11 @@ function AvailabeleForHire() {
       >
         <h4>Hi! 👋, I'm Patrick</h4>
         <div className="h-[2px] w-[50px] bg-secondary rounded-lg" />
-        <motion.div
-          whileHover={{ scale: 1.1 }}
+        <div
           className="bg-primary px-6 py-3 rounded-lg"
         >
           Available for hire
-        </motion.div>
+        </div>
       </motion.div>
     </>
   );

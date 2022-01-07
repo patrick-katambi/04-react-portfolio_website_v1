@@ -4,6 +4,7 @@ import Slider from "./compoents/slider";
 import AvailabeleForHire from "./modules/available_for_hire";
 import WhoAmI from "./modules/who_am_i";
 import Projects from "./modules/projects";
+import Skills from "./modules/skills";
 
 function App() {
   const [loadingMessage, setLoadingMessage] = useState("Loading ....");
@@ -13,6 +14,7 @@ function App() {
       <NavigationBar />
       <AvailabeleForHire />
       <WhoAmI />
+      <Skills />
       <Projects />
     </div>
   );

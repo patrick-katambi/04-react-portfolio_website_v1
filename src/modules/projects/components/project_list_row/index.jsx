@@ -7,7 +7,7 @@ function ProjectList() {
     <motion.div
       initial={{ y: "1000px", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", duration: 0.4, delay: 2.8 }}
+      transition={{ type: "spring", duration: 0.4, delay: 2.9 }}
       className="flex flex-col"
     >
       <div className="mb-[200px] ml-[10%] flex flex-row justify-start items-center gap-x-[100px]">
