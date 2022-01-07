@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import NavigationBar from "./compoents/navigationBar";
 import { useState } from "react";
 import Slider from "./compoents/slider";
+import copy from 'copy-text-to-clipboard';
 
 function App() {
   const [loadingMessage, setLoadingMessage] = useState("Loading ....");
@@ -102,6 +103,7 @@ function EmailSection() {
       onClick={(e) => {
         setCopyMessage("Copied!");
         const email = document.querySelector(".email").textContent;
+        copy(email)
       }}
       transition={{ duration: 0.5, type: "spring" }}
       className="w-[60%] bg-offset flex flex-row justify-start items-center text-secondary rounded-lg gap-x-4"
