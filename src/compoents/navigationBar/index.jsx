@@ -9,7 +9,7 @@ function NavigationBar() {
       <div></div>
       <div className="flex flex-row items-center gap-x-8 text-sm font-codeLight">
         {/* <MenuLinks /> */}
-        <AboutMe />
+        {/* <AboutMe /> */}
       </div>
     </div>
   );
