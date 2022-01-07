@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import NavigationBar from "./compoents/navigationBar";
 import { useState } from "react";
 import Slider from "./compoents/slider";
-import emailIcon from './images/email_icon.png'
+import emailIcon from "./images/email_icon.png";
 
 function App() {
   const [loadingMessage, setLoadingMessage] = useState("Loading ....");
@@ -49,10 +49,10 @@ function WhoAmI() {
   return (
     <>
       <motion.div
-        initial={{ y: "100vh" }}
-        animate={{ y: 0 }}
+        initial={{ y: "100vh", rotate: "30deg", scale: 0.8 }}
+        animate={{ y: 0, rotate: 0, scale: 1 }}
         transition={{ type: "spring", duration: 1, delay: 2.5 }}
-        className="w-full bg-primary my-[100px] px-[10%] text-secondary font-codeBold text-[70px]"
+        className="bg-primary my-[100px] mx-[10%] text-secondary font-codeBold text-[70px]"
       >
         <h1>
           I do software design & development for the{" "}
@@ -64,11 +64,25 @@ function WhoAmI() {
         </h1>
         <div className="w-[60%] font-codeMedium text-[15px] text-accent">
           <p className="my-[40px] ">
-            I'm a software engineer who loves the attention to details. I have recently graduated from University of Dar es Salaam
+            I'm a software engineer who loves the attention to details. I have
+            recently graduated from University of Dar es Salaam
           </p>
-          <div className="w-[60%] bg-offset flex flex-row justify-start items-center text-secondary rounded-lg gap-x-4">
-            <div className="w-[70px] h-[70px] p-4 bg-accent rounded-lg">
-              <img className="h-full w-full" src={emailIcon} alt=""/>
+          <div className="w-[400px] bg-offset flex flex-row justify-start items-center text-secondary rounded-lg gap-x-4">
+            <div className="w-[70px] h-[70px] p-4 bg-primary rounded-lg border-accent border-[1px] border-solid">
+              {/* <img className="h-full w-full" src={emailIcon} alt=""/> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  id="ic_markunread_24px"
+                  d="M20,4H4A2,2,0,0,0,2.01,6L2,18a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V6A2.006,2.006,0,0,0,20,4Zm0,4-8,5L4,8V6l8,5,8-5Z"
+                  transform="translate(-2 -4)"
+                  fill="#8892B0"
+                />
+              </svg>
             </div>
             <p>katambipatrick@gmail.com</p>
           </div>
