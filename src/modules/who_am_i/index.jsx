@@ -13,7 +13,7 @@ function WhoAmI() {
         <MainText />
         <div className="tablet:w-[65%] font-codeMedium text-[15px] text-accent">
           <QuickInfo />
-          <div className="mobile:px-[15px] py-0 laptopL:w-[60%]">
+          <div className="mobile:px-[30px] py-0 laptopL:w-[60%]">
             <EmailSection />
           </div>
         </div>
@@ -26,7 +26,7 @@ export default WhoAmI;
 
 function MainText() {
   return (
-    <div className="mobile:text-[30px] mobile:px-[15px]  laptop:text-[60px] laptopL:text-[75px]">
+    <div className="mobile:text-[37px] mobile:px-[30px]  laptop:text-[65px] laptopL:text-[75px]">
       <h1>
         I do software design & development for the{" "}
         <motion.div
@@ -51,7 +51,7 @@ function MainText() {
 
 function QuickInfo() {
   return (
-    <div className="my-[40px] mobile:my-[10px] mobile:text-[16px] mobile:p-[15px] laptop:text-[20px] laptopL:text-[30px]">
+    <div className="my-[40px] mobile:my-[10px] mobile:text-[16px] mobile:p-[30px] laptop:text-[20px] laptopL:text-[30px]">
       <p>
         I'm a software engineer who loves{" "}
         <motion.div

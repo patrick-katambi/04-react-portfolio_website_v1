@@ -14,7 +14,7 @@ module.exports = {
       accent: "#8892B0",
     },
     screens: {
-      'mobile': '320px',
+      'mobile': '300px',
       'tablet': '640px',
       'laptop': '1024px',
       'laptopL': '1440px',
