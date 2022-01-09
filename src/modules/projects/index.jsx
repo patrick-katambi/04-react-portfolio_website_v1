@@ -4,7 +4,12 @@ import SectionTitle from "../../compoents/section_title";
 
 function Projects() {
   return (
-    <motion.div className="w-full mb-[100px] laptop:w-[90%] mx-auto bg-offset rounded-lg p-[30px] tablet:p-[10%] laptop:p-[50px]">
+    <motion.div
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", duration: 0.7, delay: 2.8 }}
+      className="w-full mb-[100px] laptop:w-[90%] mx-auto bg-offset rounded-lg p-[30px] tablet:p-[10%] laptop:p-[50px]"
+    >
       <SectionTitle title={"PROJECTS"} />
       <ProjectListItems />
     </motion.div>
