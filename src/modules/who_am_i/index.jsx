@@ -13,7 +13,7 @@ function WhoAmI() {
         <MainText />
         <div className="tablet:w-[65%] font-codeMedium text-[15px] text-accent">
           <QuickInfo />
-          <div className="mobile:px-[30px] py-0 laptopL:w-[60%]">
+          <div className="mobile:px-[30px] py-0 laptopL:w-[70%]">
             <EmailSection />
           </div>
         </div>

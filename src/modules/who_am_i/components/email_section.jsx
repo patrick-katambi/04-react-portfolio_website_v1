@@ -25,7 +25,8 @@ function EmailSection() {
   const whileHover = {
     backgroundColor: "#0A192F",
     cursor: "pointer",
-    fontSize: "16px",
+    // fontSize: "16px",
+    scale: 1.1
   };
 
   return (
