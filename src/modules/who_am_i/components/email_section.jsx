@@ -36,7 +36,7 @@ function EmailSection() {
       onHoverEnd={onHoverEnd}
       onClick={onClick}
       transition={{ duration: 0.5, type: "spring" }}
-      className="w-[60%] bg-offset flex flex-row justify-start items-center text-secondary rounded-lg gap-x-4"
+      className="bg-offset flex flex-row justify-start items-center text-secondary rounded-lg mobile:gap-x-2 tablet:gap-x-4"
     >
       <EmailIcon />
       <Email />

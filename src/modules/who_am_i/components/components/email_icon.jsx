@@ -1,6 +1,6 @@
 function EmailIcon() {
   return (
-    <div className="w-[70px] h-[70px] p-4 bg-primary rounded-lg border-accent border-[1px] border-solid">
+    <div className="mobile:w-[50px] mobile:h-[50px] mobile:p-3 laptop:w-[80px] laptop:h-[80px] laptop:p-4 bg-primary rounded-lg border-accent border-[1px] border-solid">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"

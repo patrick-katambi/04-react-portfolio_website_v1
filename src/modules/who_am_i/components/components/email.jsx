@@ -1,5 +1,5 @@
 function Email() {
-    return <p className="email">katambipatrick@gmail.com</p>
+    return <p className="email laptop:text-[20px]">katambipatrick@gmail.com</p>
 }
 
 export default Email

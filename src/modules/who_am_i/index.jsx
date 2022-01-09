@@ -8,12 +8,14 @@ function WhoAmI() {
         initial={{ y: "1000px", rotate: "30deg", scale: 0.8, opacity: 0 }}
         animate={{ y: 0, rotate: 0, scale: 1, opacity: 1 }}
         transition={{ type: "spring", duration: 1, delay: 2.5 }}
-        className="bg-primary laptop:my-[100px] laptop:mx-[10%] text-secondary font-codeBold text-[70px]"
+        className="bg-primary tablet:my-[100px] tablet:mx-[10%] text-secondary font-codeBold"
       >
         <MainText />
-        <div className="laptop:w-[60%] font-codeMedium text-[15px] text-accent laptopL:text-center">
+        <div className="tablet:w-[65%] font-codeMedium text-[15px] text-accent">
           <QuickInfo />
-          <EmailSection />
+          <div className="mobile:px-[15px] py-0 laptopL:w-[60%]">
+            <EmailSection />
+          </div>
         </div>
       </motion.div>
     </>
@@ -24,7 +26,7 @@ export default WhoAmI;
 
 function MainText() {
   return (
-    <div className="mobile:text-[30px] mobile:px-5 laptopL:text-[75px]">
+    <div className="mobile:text-[30px] mobile:px-[15px]  laptop:text-[60px] laptopL:text-[75px]">
       <h1>
         I do software design & development for the{" "}
         <motion.div
@@ -49,7 +51,7 @@ function MainText() {
 
 function QuickInfo() {
   return (
-    <div className="my-[40px] mobile:my-[10px] mobile:text-[16px] mobile:p-5">
+    <div className="my-[40px] mobile:my-[10px] mobile:text-[16px] mobile:p-[15px] laptop:text-[20px] laptopL:text-[30px]">
       <p>
         I'm a software engineer who loves{" "}
         <motion.div
