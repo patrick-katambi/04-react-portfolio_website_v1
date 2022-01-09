@@ -13,6 +13,13 @@ module.exports = {
       secondary: "#CCD6F6",
       accent: "#8892B0",
     },
+    screens: {
+      'mobile': '320px',
+      'tablet': '640px',
+      'laptop': '1024px',
+      'laptopL': '1440px',
+      'wide': '1880px',
+    },
     extend: {
       fontFamily: {
         'codeLight': ['FiraCodeLight'],
