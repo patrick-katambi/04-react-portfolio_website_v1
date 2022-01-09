@@ -8,7 +8,7 @@ function WhoAmI() {
         initial={{ y: "1000px", rotate: "30deg", scale: 0.8, opacity: 0 }}
         animate={{ y: 0, rotate: 0, scale: 1, opacity: 1 }}
         transition={{ type: "spring", duration: 1, delay: 2.5 }}
-        className="bg-primary tablet:my-[100px] tablet:mx-[10%] text-secondary font-codeBold"
+        className="bg-primary mobile:my-[50px] tablet:my-[100px] tablet:mx-[10%] text-secondary font-codeBold"
       >
         <MainText />
         <div className="tablet:w-[65%] font-codeMedium text-[15px] text-accent">
