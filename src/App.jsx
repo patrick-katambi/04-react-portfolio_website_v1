@@ -12,10 +12,12 @@ function App() {
     <div className="flex flex-col justify-start items-start bg-primary relative select-none">
       <Slider />
       <NavigationBar />
-      <AvailabeleForHire />
-      <WhoAmI />
-      {/* <Skills /> */}
-      {/* <Projects /> */}
+      <div className="wide:w-[1440px] wide:mx-auto">
+        <AvailabeleForHire />
+        <WhoAmI />
+        <Skills />
+        {/* <Projects /> */}
+      </div>
     </div>
   );
 }

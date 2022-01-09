@@ -2,7 +2,7 @@ function Technologies() {
   return (
     <>
       <p className="mt-[30px]">✨ Technologies:</p>
-      <div className="w-full mt-[20px] flex flex-row justify-between items-start gap-x-[50px]">
+      <div className="w-full mt-[20px] flex flex-col laptop:flex-row justify-between items-start gap-x-[50px] gap-y-[20px] laptop:gap-y-[50px]">
         <Frontend />
         <Backend />
       </div>
