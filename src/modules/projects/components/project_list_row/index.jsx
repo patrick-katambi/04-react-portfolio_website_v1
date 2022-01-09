@@ -10,7 +10,7 @@ function ProjectList() {
       transition={{ type: "spring", duration: 0.4, delay: 2.9 }}
       className="flex flex-col"
     >
-      <div className="mb-[200px] ml-[10%] flex flex-row justify-start items-center gap-x-[100px]">
+      <div className="mb-[200px] flex flex-col laptop:flex-row justify-start items-center gap-x-[50px]">
         <RaisedContainer number={1} />
         <LoweredContainer number={2} />
       </div>
