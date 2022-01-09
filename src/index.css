@@ -2,6 +2,16 @@
 @tailwind components;
 
 @font-face {
+  font-family: "BalsamiqReqular";
+  src: url(./fonts/BalsamiqSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "BalsamiqBold";
+  src: url(./fonts/BalsamiqSans-Bold.ttf);
+}
+
+@font-face {
   font-family: "FiraCodeLight";
   src: url(./fonts/FiraCode-Light.ttf);
 }

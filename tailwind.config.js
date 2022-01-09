@@ -23,8 +23,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'codeLight': ['FiraCodeLight'],
-        'codeMedium': ['FiraCodeMedium'],
-        'codeBold': ['FiraCodeBold'],
+        'codeMedium': ['BalsamiqReqular'],
+        'codeBold': ['BalsamiqBold'],
         'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
       }
     },
