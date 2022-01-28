@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SectionTitle from "../../compoents/section_title";
+import image from "../../images/scamtis-home.png";
 
 function Projects() {
   return (
@@ -22,14 +23,33 @@ function ProjectListItems() {
   return (
     <div className="flex flex-col">
       <div className="w-full gap-[30px] flex flex-col tabletL:flex-row">
-        <ProjectTile />
-        <ProjectTile />
+        {/* project one */}
+        <ProjectTile
+          imageAsset={image}
+          number={1}
+          type={"React js, Django, Miscrosoft SQL Server"}
+          name={"SCAMTIS"}
+          shortDesc={
+            "Student Continuous Assessment & Marks Tallying Information System. This was my final year project at the University of Dar es Salaam, Tanzania."
+          }
+        />
+
+        {/* project two */}
+        <ProjectTile
+          imageAsset={image}
+          number={2}
+          type={"React js, Django, Miscrosoft SQL Server"}
+          name={"SCAMTIS"}
+          shortDesc={
+            "Student Continuous Assessment & Marks Tallying Information System. This was my final year project at the University of Dar es Salaam, Tanzania."
+          }
+        />
       </div>
     </div>
   );
 }
 
-function ProjectTile() {
+function ProjectTile({ number, imageAsset, type, name, shortDesc }) {
   const [hovered, setHovered] = useState(false);
 
   const textMotion = {
@@ -59,6 +79,20 @@ function ProjectTile() {
     },
   };
 
+  const imageContainerHover = {
+    rest: {
+      scale: 1,
+      ease: "easeOut",
+      duration: 0.2,
+      type: "tween",
+    },
+    hover: {
+      // padding: "10px",
+      scale: 0.9,
+      transition: { duration: 0.2, type: "tween", ease: "easeIn" },
+    },
+  };
+
   return (
     <div className="w-full h-[800px] bg-primary rounded-lg">
       <motion.div
@@ -66,7 +100,14 @@ function ProjectTile() {
         whileHover="hover"
         className="w-full h-full flex flex-col cursor-pointer font-codeMedium"
       >
-        <div className="h-[50%] tablet:h-[60%] tabletL:h-[40%] laptop:h-[50%] bg-[grey] rounded-lg rounded-b-none"></div>
+        <motion.div className="h-[50%] tablet:h-[60%] tabletL:h-[40%] laptop:h-[50%] bg-[#f5f5f5] flex flex-col justify-center items-center rounded-lg rounded-b-none">
+          <motion.img
+            // variants={imageContainerHover}
+            src={imageAsset}
+            alt=""
+            className=" w-full rounded-lg rounded-b-none"
+          />
+        </motion.div>
         <motion.div className="h-[50%] tablet:h-[40%] tabletL:h-[60%] laptop:h-[50%] rounded-lg rounded-t-none text-secondary">
           <motion.div
             variants={containerHover}
@@ -78,18 +119,12 @@ function ProjectTile() {
                   hovered ? "text-opacity-50 text-[20px]" : "text-opacity-100"
                 }`}
               >
-                <div>01</div>
-                <div className="w-[50px] h-[2px] bg-[red] " />
-                <motion.div variants={textMotion}>Project name</motion.div>
+                <div>{number}</div>
+                <div className="w-[50px] h-[2px] bg-[white] " />
+                <motion.div variants={textMotion}>{type}</motion.div>
               </div>
-              <h1 className="text-[30px] font-codeBold">Project Highlight</h1>
-              <div>
-                I helped Ankama on the UX issues they had with their game
-                launcher, an interface to discover and play all the games from
-                Ankama. Ankama is a French digital company, specialising in
-                creating animes, videos games or comics like Wakfu, Dofus or
-                Krosmaga.
-              </div>
+              <h1 className="text-[30px] font-codeBold">{name}</h1>
+              <div>{shortDesc} </div>
             </div>
           </motion.div>
         </motion.div>
